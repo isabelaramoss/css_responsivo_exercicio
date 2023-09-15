@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(54, 54, 54);
+  color: white;
+  padding: 10px 0;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+nav li a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.container-flex{
+  display: flex;
+}
+
+
+#sobre-a-loja img {
+  max-width: 400px;
+  max-height: 400px;
+  margin-right: 24px;
+}
+
+section{
+  padding: 38px 0;
+}
+
+section h2{
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgb(54, 54, 54);
+  margin-bottom: 12px;
+}
+
+.lista-produtos{
+  flex-wrap: wrap;
+}
+
+.lista-produtos li{
+  list-style: none;
+  max-width: 25%;
+  margin-bottom: 24px;
+}
+
+.lista-produtos li img{
+  max-width: 100%;
+}
+
+.lista-produtos li h3{
+  margin: 16px 0;
+}

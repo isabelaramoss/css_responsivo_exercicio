@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Layout Responsivo</title>
+</head>
+<!--Criar uma seção “sobre a loja”, nesta seção teremos duas colunas uma com a imagem da loja e outra com
+um texto.
+
+Criar uma seção de produtos onde haverá uma listagem de 4 produtos, lado a lado, com a imagem, nome e
+descrição do produto e um botão para adicionar ao carrinho.
+
+-->
+<body>
+<header>
+<div class="container">
+  <h1>Classic Football Shirts</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Sobre a loja</a>
+      </li>
+      <li>
+        <a href="#">Produtos</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+<section id="sobre-a-loja">
+  <div class="container container-flex">
+    <img src="/imagem/loja-imagem.jpg" alt="Imagem da fachada da loja"/>
+    <div>
+      <h2>Sobre a loja</h2>
+      <p>De origens humildes, a loja Classic Football Shirts revolucionou rapidamente o mercado de camisas de futebol. 
+        Fundada por dois estudantes da Universidade de Manchester, hoje a Classic Football Shirts oferece aos torcedores acesso 
+        à maior coleção online de camisas de futebol do mundo, com uma plataforma profissional e respeitável que oferece camisas de 
+        futebol vintage de milhares de clubes e times internacionais diferentes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="produtos">
+  <div class="container">
+    <h2>Produtos</h2>
+    <ul class="container-flex lista-produtos">
+      <li>
+        <img src="/imagem/camisa1.jpg" alt="Camiseta de jogo Liverpool - Temporada 2010-12"/>
+        <h3>2010-12 Liverpool Home Kit</h3>
+        <p>
+          Todos os tamanhos - M/F
+        </p>
+        <div class="preco">
+          <strong>R$200,00</strong>
+        </div>
+        <button type="button">Adicionar ao carrinho</button>
+      </li>
+      <li>
+        <img src="/imagem/camisa2.jpg" alt="Camiseta de jogo Corinthians - Temporada 1993"/>
+        <h3>1993 Corinthians Away Shirt</h3>
+        <p>
+          Todos os tamanhos - M/F
+        </p>
+        <div class="preco">
+          <strong>R$200,00</strong>
+        </div>
+        <button type="button">Adicionar ao carrinho</button>
+      </li>
+      <li>
+        <img src="/imagem/camisa3.jpg" alt="Camiseta de jogo St. Pauli - Temporada 1995-97"/>
+        <h3>1995-97 St Pauli Home Shirt</h3>
+        <p>
+          Todos os tamanhos - M/F
+        </p>
+        <div class="preco">
+          <strong>R$200,00</strong>
+        </div>
+        <button type="button">Adicionar ao carrinho</button>
+      </li>
+      <li>
+        <img src="/imagem/camisa4.jpg" alt="Camiseta de jogo Roma - Temporada 2012-13"/>
+        <h3>2012-13 Roma Third Shirt</h3>
+        <p>
+          Todos os tamanhos - M/F
+        </p>
+        <div class="preco">
+          <strong>R$200,00</strong>
+        </div>
+        <button type="button">Adicionar ao carrinho</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
