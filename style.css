@@ -17,29 +17,9 @@ header {
   padding: 10px 0;
 }
 
-header .container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav li {
-  display: inline;
-  margin-left: 16px;
-  font-size: 18px;
-}
-
-nav li a{
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-
 .container-flex{
   display: flex;
 }
-
 
 #sobre-a-loja img {
   max-width: 400px;
@@ -65,12 +45,79 @@ section h2{
   list-style: none;
   max-width: 25%;
   margin-bottom: 24px;
+  margin-right: 18px;
 }
 
 .lista-produtos li img{
+  max-width: 214px;
+  max-height: 214px;
   max-width: 100%;
 }
 
 .lista-produtos li h3{
-  margin: 16px 0;
+  margin: 8px 0;
+}
+
+.preco{
+  margin: 12px 0;
+  font-size: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(3, 3, 120);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*celulares*/
+@media screen and (max-width:767px){
+  .container{
+    display: block;
+    max-width: 90%;
+  }
+
+  #sobre-a-loja img {
+    max-width: 320px;
+    max-height: 320px;
+  }
+
+  #sobre-a-loja h2{
+    padding-top: 20px;
+  }
+
+  .produtos{
+    padding: 15px 0;
+  }
+    
+  .lista-produtos{
+    flex-wrap: block;
+  }
+
+  .lista-produtos li{
+    max-width: 40%;
+    margin-bottom: 24px;
+    margin-right: 30px;
+  }
+
+}
+
+/*iPad*/
+@media screen and (min-width:768px) and (max-width:1023px){
+  .container{
+    max-width: 98%;
+  }
+
+  .lista-produtos li{
+    max-width: 60%;
+    margin-bottom: 24px;
+    margin: 0 50px;
+  }
+
 }
